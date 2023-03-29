@@ -73,7 +73,7 @@ def drawBoundaryLoop(mesh, r, bdColor):
     bpy.ops.object.shade_smooth()
 
     # # subdivision
-    level = 2
+    level = 0
     bpy.context.view_layer.objects.active = bdObj
     bpy.ops.object.modifier_add(type='SUBSURF')
     bdObj.modifiers["Subdivision"].render_levels = level
